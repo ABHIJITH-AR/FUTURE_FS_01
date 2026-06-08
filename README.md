@@ -1,4 +1,4 @@
-# Abhijith AR - Personal Portfolio
+# Abhijith AR - Developer Portfolio
 
 Welcome to my personal portfolio! I am a B.Tech Computer Science and Engineering student passionate about web development and programming, exploring new technologies, and building highly polished, responsive digital experiences.
 

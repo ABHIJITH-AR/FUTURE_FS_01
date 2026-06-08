@@ -22,40 +22,31 @@ export default function App() {
     const sections = ["home", "about", "education", "skills", "projects", "experience", "achievements", "contact"];
     
     const handleScroll = () => {
-      const offset = 120; // Navbar trigger offset
-      
       // Safe fallback if near top
-      if (window.scrollY < 80) {
+      if (window.scrollY < 50) {
         setActiveSection("home");
         return;
       }
 
       // Safe fallback if near the absolute bottom page height
-      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60) {
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 80) {
         setActiveSection("contact");
         return;
       }
 
+      const viewportCenter = window.innerHeight * 0.35; // 35% of page viewport height from top
       let currentActive = "home";
-      let minDistance = Infinity;
 
-      sections.forEach((id) => {
+      for (const id of sections) {
         const element = document.getElementById(id);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Check if this section spans our active detection threshold line
-          if (rect.top <= offset && rect.bottom > offset) {
+          if (rect.top <= viewportCenter && rect.bottom > viewportCenter) {
             currentActive = id;
-            minDistance = -1; // Exact section hit
-          } else if (minDistance !== -1) {
-            const distance = Math.abs(rect.top - offset);
-            if (distance < minDistance) {
-              minDistance = distance;
-              currentActive = id;
-            }
+            break;
           }
         }
-      });
+      }
 
       setActiveSection(currentActive);
     };

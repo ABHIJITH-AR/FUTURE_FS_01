@@ -9,14 +9,14 @@ import { motion } from "motion/react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative bg-dark-bg/95 overflow-hidden border-t border-white/5">
+    <section id="about" className="pt-6 sm:pt-8 lg:pt-10 pb-20 lg:pb-24 relative bg-dark-bg/95 overflow-hidden border-t border-white/5">
       {/* Background decorations */}
       <div className="absolute top-1/2 right-0 w-72 h-72 rounded-full bg-brand-purple/10 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-brand-cyan/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
         {/* Section Heading */}
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-10">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

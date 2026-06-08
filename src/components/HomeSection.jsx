@@ -145,7 +145,7 @@ export const HomeSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-dark-bg"
+      className="relative flex items-center justify-center pt-24 sm:pt-28 pb-4 sm:pb-8 lg:pb-10 overflow-hidden bg-dark-bg"
     >
       {/* Decorative Orbs */}
       <div className="absolute top-1/4 left-1/4 -translate-y-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-brand-cyan/15 blur-[120px] pointer-events-none animate-pulse-slow" />
@@ -194,7 +194,7 @@ export const HomeSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-8"
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-6"
               id="hero-cta-buttons"
             >
               <motion.button
