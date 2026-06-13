@@ -50,16 +50,21 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ y: -6 }}
-              className="glass-panel rounded-2xl border border-white/8 hover:border-brand-cyan/25 flex flex-col justify-between overflow-hidden relative shadow-2xl transition-all duration-300 group"
+              whileHover={{ 
+                y: -10, 
+                scale: 1.015,
+                borderColor: "rgba(0, 242, 254, 0.4)",
+                boxShadow: "0 20px 40px rgba(0, 242, 254, 0.15)"
+              }}
+              className="glass-panel rounded-2xl border border-white/8 flex flex-col justify-between overflow-hidden relative shadow-2xl transition-all duration-300 group"
               id={`project-card-${project.id}`}
             >
               {/* Image alternative representation: Sleek tech gradient banner with project tag */}
-              <div className="h-44 w-full bg-gradient-to-br from-slate-950 via-slate-900 to-dark-panel p-6 relative flex flex-col justify-between border-b border-white/5">
-                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/5 to-brand-purple/5 opacity-40 mix-blend-overlay" />
+              <div className="h-44 w-full bg-gradient-to-br from-slate-950 via-slate-900 to-dark-panel p-6 relative flex flex-col justify-between border-b border-white/5 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/5 to-brand-purple/5 opacity-40 mix-blend-overlay group-hover:scale-110 group-hover:rotate-2 transition-transform duration-500" />
 
                 <div className="flex items-center justify-between w-full relative z-10">
-                  <div className="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shadow-inner">
+                  <div className="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shadow-inner group-hover:scale-110 group-hover:rotate-6 transition-all duration-350">
                     <FolderGit2 size={20} />
                   </div>
                   <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 font-bold bg-white/5 border border-white/5 px-2.5 py-1 rounded-full">
@@ -68,7 +73,7 @@ export const ProjectsSection = () => {
                 </div>
 
                 <div className="relative z-10">
-                  <h3 className="text-xl md:text-2xl font-display font-bold text-white group-hover:text-brand-cyan transition-colors">
+                  <h3 className="text-xl md:text-2xl font-display font-bold text-white group-hover:text-brand-cyan transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>
@@ -89,7 +94,7 @@ export const ProjectsSection = () => {
                     <ul className="space-y-2">
                       {project.features.map((feat, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-slate-400 text-xs font-sans">
-                          <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan group-hover:scale-125 group-hover:bg-brand-purple transition-all duration-300" />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -106,14 +111,15 @@ export const ProjectsSection = () => {
                   </span>
                   <div className="flex flex-wrap gap-2 mb-6" id={`project-tech-tags-${project.id}`}>
                     {project.techStack.map((tech) => (
-                      <span
+                      <motion.span
                         key={tech}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/40 border border-white/5 hover:border-brand-cyan/20 text-slate-300 font-sans text-xs transition-colors group/tag"
+                        whileHover={{ scale: 1.08, y: -2 }}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/40 border border-white/5 hover:border-brand-cyan/30 text-slate-300 font-sans text-xs transition-all duration-300 cursor-default group/tag"
                         title={tech}
                       >
                         <TechLogo type={tech} size={14} className="flex-shrink-0" />
                         <span>{tech}</span>
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
 

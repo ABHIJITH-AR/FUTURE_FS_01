@@ -12,6 +12,7 @@ export const PERSONAL_INFO = {
   email: "abhijith90711@gmail.com",
   linkedin: "https://www.linkedin.com/in/abhijith-ar-770b47334",
   github: "https://github.com/ABHIJITH-AR",
+  resumeUrl: "https://drive.google.com/file/d/1qGuCEnDMQ7DaDkr4oJuOlF0DyC-zD52K/view?usp=drivesdk",
   aboutMe: "I am a B.Tech Computer Science and Engineering student with a strong interest in web development and programming. I enjoy building projects, exploring new technologies, and continuously improving my technical skills.",
   currentRole: {
     role: "Associate Creative Officer",
@@ -82,7 +83,7 @@ export const EXPERIENCE = [
     id: "exp-1",
     role: "Full Stack Web Development",
     company: "Future Intern",
-    duration: "2026",
+    duration: "May 2026 - June 2026",
     description: [
       "Developed and improved web applications using modern technologies.",
       "Worked on assigned internship tasks and projects.",
@@ -94,7 +95,7 @@ export const EXPERIENCE = [
     id: "exp-2",
     role: "Associate Creative Officer",
     company: "Innovation and Entrepreneurship Development Centre (IEDC MGMCET)",
-    duration: "2026",
+    duration: "2026 - Present",
     description: [
       "Contributed to creative initiatives and event promotions.",
       "Supported innovation and entrepreneurship-related activities.",
@@ -151,7 +152,7 @@ export const PROJECTS = [
   },
   {
     id: "proj-4",
-    title: "Simple Calculator 2026",
+    title: "Simple Calculator",
     techStack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     description: "Built a modern and responsive calculator application with scientific memory functions, calculation history tracking, keyboard support, and a clean dark-themed user interface for seamless mathematical computations.",
     features: [
