@@ -7,8 +7,8 @@ export const PERSONAL_INFO = {
   name: "Abhijith AR",
   title: "Computer Science Engineering Student",
   subtitle: "Passionate about Web Development & Digital Experiences",
-  profilePicUrl: "https://lh3.googleusercontent.com/d/13qBSKXaS1eaPlC2oOcY6OaehKKANuAah", // Directly embeddable Google Drive link format
-  fallbackProfilePicUrl: "https://drive.google.com/file/d/13qBSKXaS1eaPlC2oOcY6OaehKKANuAah/view?usp=drivesdk",
+  profilePicUrl: "https://lh3.googleusercontent.com/d/1fm7UUncbVMIETcgD5ekCG8_gYf60MM4C", // Direct embed link for the user's Google Drive image
+  fallbackProfilePicUrl: "https://drive.google.com/file/d/1fm7UUncbVMIETcgD5ekCG8_gYf60MM4C/view?usp=drivesdk",
   email: "abhijith90711@gmail.com",
   linkedin: "https://www.linkedin.com/in/abhijith-ar-770b47334",
   github: "https://github.com/ABHIJITH-AR",
