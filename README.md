@@ -1,8 +1,14 @@
-<p align="center">
-  <img src="./src/assets/images/github_banner_1785059813268.jpg" alt="Abhijith AR Banner" width="100%" />
-</p>
+<div align="center">
 
-# Abhijith AR - Developer Portfolio
+```text
+ █████  ██████  ██   ██ ██      ██ ████████ ██   ██     █████  ██████  
+██   ██ ██   ██ ██   ██ ██      ██    ██    ██   ██    ██   ██ ██   ██ 
+███████ ██████  ███████ ██      ██    ██    ███████    ███████ ██████  
+██   ██ ██   ██ ██   ██ ██ ██   ██    ██    ██   ██    ██   ██ ██   ██ 
+██   ██ ██████  ██   ██ ██  █████     ██    ██   ██    ██   ██ ██   ██ 
+```
+
+</div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abhijith-ar-770b47334">
