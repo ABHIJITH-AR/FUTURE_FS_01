@@ -1,6 +1,6 @@
 <div align="center">
 
-ABHIJITH AR
+# ABHIJITH AR
 
 ### Full Stack Developer • B.Tech Computer Science & Engineering
 
