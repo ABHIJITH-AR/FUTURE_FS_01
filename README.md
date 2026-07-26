@@ -1,4 +1,8 @@
-# Abhijith AR - Portfolio Website 
+<p align="center">
+  <img src="./src/assets/images/github_banner_1785059813268.jpg" alt="Abhijith AR Banner" width="100%" />
+</p>
+
+# Abhijith AR - Developer Portfolio
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abhijith-ar-770b47334">
@@ -8,7 +12,7 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" />
   </a>
   <a href="mailto:abhijith90711@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+    <img src="https://img.shields.io/badge/abhijith90711@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
   </a>
 </p>
 
@@ -31,13 +35,13 @@ Welcome to my personal portfolio! I am a B.Tech Computer Science and Engineering
 ## 🛠️ Tech Stack & Skills
 
 ### **Programming Languages**
-- C, Python, Java, JavaScript, TypeScript, MySQL
+- C, Python, Java, JavaScript, TypeScript, SQL
 
 ### **Web Technologies & Frameworks**
 - HTML5, CSS3, React.js, Tailwind CSS, Node.js, Express.js
 
 ### **Tools, Databases & Core Concepts**
-- Git, GitHub, MySQL, MongoDB, Vite, VS Code, Data Structures & Algorithms, Object-Oriented Programming (OOP)
+- Git, GitHub, MySQL, MongoDB, Vite, VS Code, Data Structures (DSA), Object-Oriented Programming (OOP)
 
 ---
 
