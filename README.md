@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" />
   </a>
   <a href="mailto:abhijith90711@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+    <img src="https://img.shields.io/badge/abhijith90711@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
   </a>
 </p>
 
@@ -51,7 +51,7 @@ A full-stack Customer Relationship Management platform for lead tracking with an
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-0066CC?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://github.com/ABHIJITH-AR/FUTURE_FS_02.git">
-    <img src="https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
+    <img src="https://img.shields.io/badge/Repository-6C757D?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
   </a>
 </p>
 
@@ -63,7 +63,7 @@ A responsive plant nursery catalog website featuring advanced search, filtering,
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-0066CC?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://github.com/ABHIJITH-AR/FUTURE_FS_03.git">
-    <img src="https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
+    <img src="https://img.shields.io/badge/Repository-6C757D?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
   </a>
 </p>
 
@@ -75,7 +75,7 @@ An AI-powered resume analyzer providing evaluation scores, detailed feedback, pr
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-0066CC?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://github.com/ABHIJITH-AR/Smart-AI-Resume-Analyzer.git">
-    <img src="https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
+    <img src="https://img.shields.io/badge/Repository-6C757D?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
   </a>
 </p>
 
@@ -87,7 +87,7 @@ A modern scientific calculator with history tracking, memory keys, keyboard shor
     <img src="https://img.shields.io/badge/%F0%9F%8C%90_Live_Demo-0066CC?style=for-the-badge&logoColor=white" alt="Live Demo" />
   </a>
   <a href="https://github.com/ABHIJITH-AR/Simple-Calculator.git">
-    <img src="https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
+    <img src="https://img.shields.io/badge/Repository-6C757D?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
   </a>
 </p>
 
