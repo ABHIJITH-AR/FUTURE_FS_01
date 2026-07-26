@@ -101,13 +101,11 @@ Modern calculator with history and dark mode.
 
 # 📫 Contact
 
-📧 Email: abhijith90711@gmail.com
+📧 Email:abhijith90711@gmail.com
 
-💼 LinkedIn:
-https://www.linkedin.com/in/abhijith-ar-770b47334
+💼 LinkedIn:https://www.linkedin.com/in/abhijith-ar-770b47334
 
-💻 GitHub:
-https://github.com/ABHIJITH-AR
+💻 GitHub:https://github.com/ABHIJITH-AR
 
 ---
 
