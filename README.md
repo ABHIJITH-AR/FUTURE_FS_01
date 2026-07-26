@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/header_banner_1785060246307.jpg" alt="Abhijith AR Banner" width="100%" />
+  <img src="./src/assets/images/banner.svg" alt="Abhijith AR Banner" width="100%" />
 </p>
 
 # Abhijith AR - Developer Portfolio
