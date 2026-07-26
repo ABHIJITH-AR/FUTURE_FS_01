@@ -105,6 +105,7 @@ Modern calculator with history and dark mode.
 
 💼 LinkedIn:
 https://www.linkedin.com/in/abhijith-ar-770b47334
+
 💻 GitHub:
 https://github.com/ABHIJITH-AR
 
