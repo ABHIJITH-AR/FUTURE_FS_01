@@ -1,8 +1,0 @@
-{
-  "name": "Abhijith AR Portfolio",
-  "description": "Developer portfolio and README showcase for Abhijith AR",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
