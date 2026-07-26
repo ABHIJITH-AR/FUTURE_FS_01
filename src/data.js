@@ -70,6 +70,7 @@ export const SKILLS = [
   { name: "Git", category: "Tools & Databases", logoType: "git" },
   { name: "GitHub", category: "Tools & Databases", logoType: "github" },
   { name: "MySQL", category: "Tools & Databases", logoType: "mysql" },
+  { name: "MongoDB", category: "Tools & Databases", logoType: "mongodb" },
   { name: "VS Code", category: "Tools & Databases", logoType: "vscode" },
   { name: "Vite", category: "Tools & Databases", logoType: "vite" },
 
@@ -138,7 +139,7 @@ export const PROJECTS = [
   {
     id: "proj-3",
     title: "Smart AI Resume Analyzer",
-    techStack: ["React", "TypeScript", "Node.js", "Express.js", "Tailwind CSS"],
+    techStack: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     description: "Developed an AI-powered resume analysis platform that evaluates resumes, provides detailed scoring, and offers insights to improve candidate profiles. The application features an intuitive dashboard, analytics visualization, and profile management capabilities.",
     features: [
       "AI-based resume analysis",
@@ -147,7 +148,7 @@ export const PROJECTS = [
       "User profile management",
       "Responsive and modern UI"
     ],
-    liveLink: "https://smart-ai-resume-analyzer-vg5v.onrender.com/",
+    liveLink: "https://smart-ai-resume-analyzer-sooty.vercel.app",
     githubLink: "https://github.com/ABHIJITH-AR/Smart-AI-Resume-Analyzer.git"
   },
   {
