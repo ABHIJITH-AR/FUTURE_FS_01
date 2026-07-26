@@ -35,7 +35,7 @@ Welcome to my personal portfolio! I am a B.Tech Computer Science and Engineering
 ## 🛠️ Tech Stack & Skills
 
 ### **Programming Languages**
-- C, Python, Java, JavaScript, TypeScript, SQL
+- C, Python, Java, JavaScript, TypeScript, MySQL
 
 ### **Web Technologies & Frameworks**
 - HTML5, CSS3, React.js, Tailwind CSS, Node.js, Express.js
