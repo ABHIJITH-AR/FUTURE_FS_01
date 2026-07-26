@@ -52,6 +52,7 @@ I am a **B.Tech Computer Science & Engineering** student passionate about web de
 - VS Code
 - Vite
 - MySQL
+- MongoDB
 
 ---
 
