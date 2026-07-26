@@ -2,7 +2,7 @@
   <img src="./src/assets/images/github_banner_clean_1785061025924.jpg" alt="Abhijith AR Banner" width="100%" />
 </p>
 
-# Abhijith AR - Developer Portfolio
+# Portfolio Website 
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abhijith-ar-770b47334">
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" />
   </a>
   <a href="mailto:abhijith90711@gmail.com">
-    <img src="https://img.shields.io/badge/abhijith90711@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
   </a>
 </p>
 
