@@ -5,8 +5,8 @@
 ### Full Stack Developer • B.Tech Computer Science & Engineering
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ABHIJITH-AR)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhijith-ar-770b47334)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijith90711@gmail.com)
 
 </div>
 
@@ -101,11 +101,10 @@ Modern calculator with history and dark mode.
 
 # 📫 Contact
 
-📧 Email: YOUR_EMAIL@gmail.com
+📧 Email: abhijith90711@gmail.com
 
 💼 LinkedIn:
-https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME
-
+https://www.linkedin.com/in/abhijith-ar-770b47334
 💻 GitHub:
 https://github.com/ABHIJITH-AR
 
