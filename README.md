@@ -37,7 +37,7 @@ Welcome to my personal portfolio! I am a B.Tech Computer Science and Engineering
 - HTML5, CSS3, React.js, Tailwind CSS, Node.js, Express.js
 
 ### **Tools, Databases & Core Concepts**
-- Git, GitHub, MySQL, MongoDB, Vite, VS Code, Data Structures (DSA), Object-Oriented Programming (OOP)
+- Git, GitHub, MySQL, MongoDB, Vite, VS Code, Data Structures & Algorithms, Object-Oriented Programming (OOP)
 
 ---
 
