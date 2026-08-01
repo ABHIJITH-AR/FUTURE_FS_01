@@ -3,6 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import crmImg from "./assets/images/card_smart_crm.svg";
+import gardenImg from "./assets/images/card_rosemary_garden.svg";
+import resumeImg from "./assets/images/card_resume_analyzer.svg";
+import calcImg from "./assets/images/card_calculator.svg";
+
 export const PERSONAL_INFO = {
   name: "Abhijith AR",
   title: "Computer Science Engineering Student",
@@ -109,6 +114,17 @@ export const PROJECTS = [
   {
     id: "proj-1",
     title: "Smart CRM",
+    image: crmImg,
+    theme: {
+      cardBg: "glass-card bg-black/95 backdrop-blur-xl",
+      borderColor: "border-cyan-500/30 hover:border-cyan-400",
+      accentText: "text-cyan-400 group-hover:text-cyan-300",
+      dotBg: "bg-cyan-400 group-hover:bg-cyan-300",
+      tagBorder: "hover:border-cyan-400/60 hover:bg-cyan-950/40",
+      iconBg: "bg-cyan-500/15 border-cyan-500/40 text-cyan-300",
+      btnGlow: "from-cyan-500/30 to-blue-600/30 text-cyan-300 border-cyan-400/50 hover:border-cyan-300",
+      hoverGlow: "0 20px 40px rgba(0, 242, 254, 0.25)"
+    },
     techStack: ["React", "HTML", "JavaScript", "Vite", "Tailwind CSS", "Node.js", "Express.js"],
     description: "Developed a full-stack Customer Relationship Management (CRM) platform for efficient client lead management. The system includes secure authentication, lead tracking, analytics dashboards, AI-powered forecasting, and complete CRUD operations to streamline business workflows.",
     features: [
@@ -124,6 +140,17 @@ export const PROJECTS = [
   {
     id: "proj-2",
     title: "Rosemary Garden",
+    image: gardenImg,
+    theme: {
+      cardBg: "glass-card bg-black/95 backdrop-blur-xl",
+      borderColor: "border-emerald-500/30 hover:border-emerald-400",
+      accentText: "text-emerald-400 group-hover:text-emerald-300",
+      dotBg: "bg-emerald-400 group-hover:bg-emerald-300",
+      tagBorder: "hover:border-emerald-400/60 hover:bg-emerald-950/40",
+      iconBg: "bg-emerald-500/15 border-emerald-500/40 text-emerald-300",
+      btnGlow: "from-emerald-500/30 to-teal-600/30 text-emerald-300 border-emerald-400/50 hover:border-emerald-300",
+      hoverGlow: "0 20px 40px rgba(16, 185, 129, 0.25)"
+    },
     techStack: ["React", "JavaScript", "Vite", "Tailwind CSS"],
     description: "Designed and developed a responsive nursery website that enables users to explore plants, flowers, and garden products. The platform includes advanced search, shopping cart functionality, WhatsApp ordering, and a mobile-friendly user experience.",
     features: [
@@ -139,6 +166,17 @@ export const PROJECTS = [
   {
     id: "proj-3",
     title: "Smart AI Resume Analyzer",
+    image: resumeImg,
+    theme: {
+      cardBg: "glass-card bg-black/95 backdrop-blur-xl",
+      borderColor: "border-purple-500/30 hover:border-purple-400",
+      accentText: "text-purple-400 group-hover:text-purple-300",
+      dotBg: "bg-purple-400 group-hover:bg-purple-300",
+      tagBorder: "hover:border-purple-400/60 hover:bg-purple-950/40",
+      iconBg: "bg-purple-500/15 border-purple-500/40 text-purple-300",
+      btnGlow: "from-purple-500/30 to-fuchsia-600/30 text-purple-300 border-purple-400/50 hover:border-purple-300",
+      hoverGlow: "0 20px 40px rgba(168, 85, 247, 0.25)"
+    },
     techStack: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     description: "Developed an AI-powered resume analysis platform that evaluates resumes, provides detailed scoring, and offers insights to improve candidate profiles. The application features an intuitive dashboard, analytics visualization, and profile management capabilities.",
     features: [
@@ -154,6 +192,17 @@ export const PROJECTS = [
   {
     id: "proj-4",
     title: "Simple Calculator",
+    image: calcImg,
+    theme: {
+      cardBg: "glass-card bg-black/95 backdrop-blur-xl",
+      borderColor: "border-amber-500/30 hover:border-amber-400",
+      accentText: "text-amber-400 group-hover:text-amber-300",
+      dotBg: "bg-amber-400 group-hover:bg-amber-300",
+      tagBorder: "hover:border-amber-400/60 hover:bg-amber-950/40",
+      iconBg: "bg-amber-500/15 border-amber-500/40 text-amber-300",
+      btnGlow: "from-amber-500/30 to-orange-600/30 text-amber-300 border-amber-400/50 hover:border-amber-300",
+      hoverGlow: "0 20px 40px rgba(245, 158, 11, 0.25)"
+    },
     techStack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     description: "Built a modern and responsive calculator application with scientific memory functions, calculation history tracking, keyboard support, and a clean dark-themed user interface for seamless mathematical computations.",
     features: [
@@ -165,7 +214,7 @@ export const PROJECTS = [
     ],
     liveLink: "https://simple-calculator-five-pearl.vercel.app/",
     githubLink: "https://github.com/ABHIJITH-AR/Simple-Calculator.git"
-  }
+  },
 ];
 
 export const CERTIFICATES = [

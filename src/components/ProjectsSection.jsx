@@ -43,117 +43,118 @@ export const ProjectsSection = () => {
 
         {/* Real Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
-          {PROJECTS.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ 
-                y: -10, 
-                scale: 1.015,
-                borderColor: "rgba(0, 242, 254, 0.4)",
-                boxShadow: "0 20px 40px rgba(0, 242, 254, 0.15)"
-              }}
-              className="glass-panel rounded-2xl border border-white/8 flex flex-col justify-between overflow-hidden relative shadow-2xl transition-all duration-300 group"
-              id={`project-card-${project.id}`}
-            >
-              {/* Image alternative representation: Sleek tech gradient banner with project tag */}
-              <div className="h-44 w-full bg-gradient-to-br from-slate-950 via-slate-900 to-dark-panel p-6 relative flex flex-col justify-between border-b border-white/5 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/5 to-brand-purple/5 opacity-40 mix-blend-overlay group-hover:scale-110 group-hover:rotate-2 transition-transform duration-500" />
+          {PROJECTS.map((project, index) => {
+            const theme = project.theme || {};
+            return (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                whileHover={{ 
+                  y: -10, 
+                  scale: 1.015,
+                  boxShadow: theme.hoverGlow || "0 20px 40px rgba(0, 242, 254, 0.15)"
+                }}
+                className={`${theme.cardBg || "glass-panel"} rounded-2xl border ${theme.borderColor || "border-white/10"} flex flex-col justify-between overflow-hidden relative shadow-2xl transition-all duration-300 group`}
+                id={`project-card-${project.id}`}
+              >
+                {/* Project Card Image Banner */}
+                <div className="h-52 sm:h-56 w-full relative overflow-hidden border-b border-white/10 group/img">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-dark-panel" />
+                  )}
 
-                <div className="flex items-center justify-between w-full relative z-10">
-                  <div className="w-10 h-10 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan shadow-inner group-hover:scale-110 group-hover:rotate-6 transition-all duration-350">
-                    <FolderGit2 size={20} />
+                  {/* Subtle vignette gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
+                </div>
+
+                {/* Core description & features */}
+                <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between relative z-10">
+                  <div>
+                    <h3 className={`text-xl sm:text-2xl font-display font-bold text-white mb-3 transition-colors duration-300 ${theme.accentText || "group-hover:text-brand-cyan"}`}>
+                      {project.title}
+                    </h3>
+                    <p className="text-slate-300 text-sm font-sans leading-relaxed mb-6">
+                      {project.description}
+                    </p>
+
+                    {/* Bullet features */}
+                    <div className="mb-6">
+                      <span className="block font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-3">
+                        Core Mechanics
+                      </span>
+                      <ul className="space-y-2">
+                        {project.features.map((feat, idx) => (
+                          <li key={idx} className="flex items-center gap-2 text-slate-300 text-xs font-sans">
+                            <span className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${theme.dotBg || "bg-brand-cyan"}`} />
+                            <span>{feat}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 font-bold bg-white/5 border border-white/5 px-2.5 py-1 rounded-full">
-                    Production Build
-                  </span>
-                </div>
 
-                <div className="relative z-10">
-                  <h3 className="text-xl md:text-2xl font-display font-bold text-white group-hover:text-brand-cyan transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                </div>
-              </div>
+                  <div>
+                    <div className="h-px bg-white/10 my-6" />
 
-              {/* Core description & features */}
-              <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between">
-                <div>
-                  <p className="text-slate-300 text-sm font-sans leading-relaxed mb-6">
-                    {project.description}
-                  </p>
-
-                  {/* Bullet features */}
-                  <div className="mb-6">
-                    <span className="block font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-3">
-                      Core Mechanics
+                    {/* PROJECT TECHNOLOGY TAGS ENHANCEMENT */}
+                    <span className="block font-mono text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-3">
+                      Technology Tags
                     </span>
-                    <ul className="space-y-2">
-                      {project.features.map((feat, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-slate-400 text-xs font-sans">
-                          <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan group-hover:scale-125 group-hover:bg-brand-purple transition-all duration-300" />
-                          <span>{feat}</span>
-                        </li>
+                    <div className="flex flex-wrap gap-2 mb-6" id={`project-tech-tags-${project.id}`}>
+                      {project.techStack.map((tech) => (
+                        <motion.span
+                          key={tech}
+                          whileHover={{ scale: 1.08, y: -2 }}
+                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/50 border border-white/10 ${theme.tagBorder || "hover:border-brand-cyan/40"} text-slate-200 font-sans text-xs transition-all duration-300 cursor-default group/tag`}
+                          title={tech}
+                        >
+                          <TechLogo type={tech} size={14} className="flex-shrink-0" />
+                          <span>{tech}</span>
+                        </motion.span>
                       ))}
-                    </ul>
-                  </div>
-                </div>
+                    </div>
 
-                <div>
-                  <div className="h-px bg-white/5 my-6" />
-
-                  {/* PROJECT TECHNOLOGY TAGS ENHANCEMENT */}
-                  <span className="block font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold mb-3">
-                    Technology Tags
-                  </span>
-                  <div className="flex flex-wrap gap-2 mb-6" id={`project-tech-tags-${project.id}`}>
-                    {project.techStack.map((tech) => (
-                      <motion.span
-                        key={tech}
-                        whileHover={{ scale: 1.08, y: -2 }}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/40 border border-white/5 hover:border-brand-cyan/30 text-slate-300 font-sans text-xs transition-all duration-300 cursor-default group/tag"
-                        title={tech}
+                    {/* CTAs */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <motion.a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-xs font-mono font-bold tracking-wider text-slate-200 border border-white/10 hover:border-white/20 cursor-pointer transition-all uppercase"
+                        id={`project-btn-git-${project.id}`}
                       >
-                        <TechLogo type={tech} size={14} className="flex-shrink-0" />
-                        <span>{tech}</span>
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* CTAs */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <motion.a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono font-bold tracking-wider text-slate-200 border border-white/5 hover:border-white/15 cursor-pointer transition-all uppercase"
-                      id={`project-btn-git-${project.id}`}
-                    >
-                      <Github size={14} /> Repository
-                    </motion.a>
-                    <motion.a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-cyan/15 to-brand-blue/15 hover:from-brand-cyan/25 hover:to-brand-blue/25 text-xs font-mono font-bold tracking-wider text-brand-cyan border border-brand-cyan/25 hover:border-brand-cyan/50 cursor-pointer transition-all uppercase shadow-[0_4px_15px_rgba(0,242,254,0.05)]"
-                      id={`project-btn-demo-${project.id}`}
-                    >
-                      <ExternalLink size={14} /> Live Demo
-                    </motion.a>
+                        <Github size={14} /> Repository
+                      </motion.a>
+                      <motion.a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                        className={`flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r ${theme.btnGlow || "from-brand-cyan/15 to-brand-blue/15 text-brand-cyan border-brand-cyan/25"} text-xs font-mono font-bold tracking-wider cursor-pointer transition-all uppercase shadow-lg`}
+                        id={`project-btn-demo-${project.id}`}
+                      >
+                        <ExternalLink size={14} /> Live Demo
+                      </motion.a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

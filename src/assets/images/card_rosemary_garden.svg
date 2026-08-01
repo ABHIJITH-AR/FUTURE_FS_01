@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Emerald-Mint Gradient for Rosemary Garden -->
+    <linearGradient id="bgGarden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042a1a" />
+      <stop offset="50%" stop-color="#0a4a2e" />
+      <stop offset="100%" stop-color="#02140d" />
+    </linearGradient>
+
+    <!-- Glowing Botanical Mint Text Gradient -->
+    <linearGradient id="gardenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#A3E635" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGarden)" rx="16" />
+
+  <!-- Grid Pattern -->
+  <path d="M0 70 H800 M0 140 H800 M0 210 H800 M0 280 H800" stroke="rgba(52, 211, 153, 0.15)" stroke-width="1" />
+  <path d="M160 0 V350 M320 0 V350 M480 0 V350 M640 0 V350" stroke="rgba(52, 211, 153, 0.15)" stroke-width="1" />
+
+  <!-- Vibrant Orbs -->
+  <circle cx="250" cy="140" r="190" fill="#10B981" opacity="0.3" filter="blur(60px)" />
+  <circle cx="550" cy="210" r="180" fill="#34D399" opacity="0.3" filter="blur(60px)" />
+
+  <style>
+    .garden-title {
+      font-family: 'Montserrat', 'Segoe UI', -apple-system, sans-serif;
+      font-weight: 900;
+      font-size: 46px;
+      letter-spacing: 5px;
+      fill: url(#gardenGrad);
+      filter: drop-shadow(0px 0px 25px rgba(52, 211, 153, 0.9));
+    }
+  </style>
+
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" class="garden-title">
+    ROSEMARY GARDEN
+  </text>
+</svg>

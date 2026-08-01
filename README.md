@@ -2,7 +2,7 @@
   <img src="./src/assets/images/github_banner_clean_1785061025924.jpg" alt="Abhijith AR Banner" width="100%" />
 </p>
 
-# Portfolio Website 
+# Abhijith AR - Portfolio
 
 <p align="center">
   <a href="https://www.linkedin.com/in/abhijith-ar-770b47334">
@@ -35,7 +35,7 @@ Welcome to my personal portfolio! I am a B.Tech Computer Science and Engineering
 ## 🛠️ Tech Stack & Skills
 
 ### **Programming Languages**
-- C, Python, Java, JavaScript, TypeScript, MySQL
+- C, Python, Java, JavaScript, TypeScript, SQL
 
 ### **Web Technologies & Frameworks**
 - HTML5, CSS3, React.js, Tailwind CSS, Node.js, Express.js
@@ -110,7 +110,7 @@ A modern scientific calculator with history tracking, memory keys, keyboard shor
 ## ⚙️ Development Guide
 
 ### Prerequisites
-- Node.js (v18+)
+- Node.js 
 - npm
 
 ### Installation & Run
