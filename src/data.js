@@ -7,13 +7,14 @@ import crmImg from "./assets/images/card_smart_crm.svg";
 import gardenImg from "./assets/images/card_rosemary_garden.svg";
 import resumeImg from "./assets/images/card_resume_analyzer.svg";
 import calcImg from "./assets/images/card_calculator.svg";
+import profileImg from "./assets/images/profile_photo.png";
 
 export const PERSONAL_INFO = {
   name: "Abhijith AR",
   title: "Computer Science Engineering Student",
   subtitle: "Passionate about Web Development & Digital Experiences",
-  profilePicUrl: "https://lh3.googleusercontent.com/d/1fm7UUncbVMIETcgD5ekCG8_gYf60MM4C", // Direct embed link for the user's Google Drive image
-  fallbackProfilePicUrl: "https://drive.google.com/file/d/1fm7UUncbVMIETcgD5ekCG8_gYf60MM4C/view?usp=drivesdk",
+  profilePicUrl: profileImg,
+  fallbackProfilePicUrl: profileImg,
   email: "abhijith90711@gmail.com",
   linkedin: "https://www.linkedin.com/in/abhijith-ar-770b47334",
   github: "https://github.com/ABHIJITH-AR",
